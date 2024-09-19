@@ -61,6 +61,16 @@ const DATA = [
       title: 'Telalogin',
       link:'/tela_login'
     },
+    {
+      id: '8',
+      title: 'Sobremim',
+      link:'/sobre_min'
+    },
+    {
+      id: '9',
+      title: 'Animes',
+      link:'/animes'
+    },
   ];
 
   const Item = ({title}: ItemProps) => (
