@@ -66,11 +66,8 @@ const DATA = [
       title: 'Sobremim',
       link:'/sobre_min'
     },
-    {
-      id: '9',
-      title: 'Animes',
-      link:'/animes'
-    },
+  
+
   ];
 
   const Item = ({title}: ItemProps) => (

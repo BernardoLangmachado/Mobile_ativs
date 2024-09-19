@@ -1,6 +1,7 @@
 import React, {useState} from "react"
 import { View, Text, TextInput, Pressable, StyleSheet, Image, Button, ScrollView, header } from "react-native"
 import Cabesalho from "../../components/Header/header";
+import { Link } from "expo-router";
 
 
 const styles = StyleSheet.create({
@@ -75,8 +76,13 @@ export default Singup = () => {
                     </Text>
 
                     <View style={styles.buttonsContainer}>
+                      <Link href={'/sobre_min/animes'} asChild>
                         <Button title="Animes Favoritos" />
+                      </Link>
+
+                      <Link href={'/sobre_min/musicas'} asChild>
                         <Button title="Musica" />
+                      </Link>
                     </View>
 
             </View>
