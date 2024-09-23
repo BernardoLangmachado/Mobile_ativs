@@ -66,6 +66,11 @@ const DATA = [
       title: 'Sobremim',
       link:'/sobre_min'
     },
+    {
+      id: '9',
+      title: 'ifome',
+      link:'/carrinho'
+    },
   
 
   ];

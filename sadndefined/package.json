@@ -29,6 +29,7 @@
     "expo-system-ui": "~3.0.7",
     "expo-web-browser": "~13.0.3",
     "ngrok": "^5.0.0-beta.2",
+    "npm": "^10.8.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.74.3",
