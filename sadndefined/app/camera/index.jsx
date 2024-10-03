@@ -4,7 +4,7 @@ import {CameraView, useCameraPermissions} from "expo-camera"
 
 export default function Camera(){
     const [permissao, pedirPermissao] = useCameraPermissions()
-    const [foot, setFoto] = useState(null)
+    const [foto, setFoto] = useState(null)
     const cameraRef = useRef(null)
 
 
@@ -19,12 +19,12 @@ export default function Camera(){
     if (!permissao.granted) {
 
         const tirarFoto = async () => {
-            const foto = cameraRef.current?.TakePictureAsync({
+            const doto = cameraRef.current?.TakePictureAsync({
                 quality: 0.5,
                 base64: true
             })
-            setFoto(foto)
-            console.log(foto)
+            setFoto(doto)
+            console.log(doto)
         }
 
         return(
