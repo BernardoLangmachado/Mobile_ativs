@@ -10,7 +10,7 @@ export default function Camera(){
 
     if(!permissao){
         return <View>
-
+<Text>weafa</Text>
         </View>
     } 
     
@@ -18,16 +18,8 @@ export default function Camera(){
 
     if (!permissao.granted) {
 
-        const tirarFoto = async () => {
-            const doto = cameraRef.current?.TakePictureAsync({
-                quality: 0.5,
-                base64: true
-            })
-            setFoto(doto)
-            console.log(doto)
-        }
-
         return(
+    
             <View style={styles.container}>
                 <Text style={styles.textopermissao}>Voce Precisa de permissao para usar a camera</Text>
                 
@@ -38,13 +30,27 @@ export default function Camera(){
 
             </View>
         )
-    } return(
+    } 
+    
+    const tirarFoto = async () => {
+        const foto = cameraRef.current?.TakePictureAsync({
+            qual
+            
+            ty: 0.5,
+            base64: true
+        })
+        setFoto(foto)
+        console.log(foto)
+    }
+    
+    
+    return(
 
         
         <View>
             <CameraView style={styles.camera} facing={"back"} ref={cameraRef}>
                 <View style={styles.ButtonContainer}>
-                    <Button title="tirar foto" onPress={tiraRFoto}/>
+                    <Button title="tirar foto" onPress={tirarFoto}/>
                 </View>
 
             </CameraView>

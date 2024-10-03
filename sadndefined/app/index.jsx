@@ -1,106 +1,64 @@
-import React, {useState} from "react"
-import { View, Text, Pressable, StyleSheet, FlatList } from "react-native"
-import { Link } from 'expo-router';
+import React, { useState, useEffect } from "react";
+import {View, Text, StyleSheet, Image, SafeAreaView} from "react-native";
+import {Link} from "expo-router";
 
-
-const style = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#F5FCFF',
-        padding: 100,
-    },
-    titulo:{
-        fontSize: 24,
-        margin: 8,
-        marginBottom: 22
-    },
-     lista:{
-       backgroundColor: '#FFA500',
-       padding: 20,
-       marginVertical: 8,
-       marginHorizontal: 16,
-     },
-})
-
-const DATA = [
-    {
-      id: '1',
-      title: 'Banco',
-      link:'/banco'
-    },
-    {
-      id: '2',
-      title: 'Calculadora',
-      link:'/calculadora'
-    },
-    {
-      id: '3',
-      title: 'Calculadora 2',
-      link:'/calculadora 2'
-    },
-    {
-      id: '4',
-      title: 'Lista-Tarefa',
-      link:'/lista-tarefa'
-      
-    },
-    {
-      id: '5',
-      title: 'Telapicker',
-      link:'/telapicker'
-    },
-    {
-      id: '6',
-      title: 'Telaregistro',
-      link:'/telaregistro'
-    },
-    {
-      id: '7',
-      title: 'Telalogin',
-      link:'/tela_login'
-    },
-    {
-      id: '8',
-      title: 'Sobremim',
-      link:'/sobre_min'
-    },
-    {
-      id: '9',
-      title: 'ifome',
-      link:'/carrinho'
-    },
-    {
-      id: '10',
-      title: 'Camera',
-      link:'/camera'
-    },
-  
-
-  ];
-
-  const Item = ({title}) => (
-    <View style={styles.item}>
-      <Text style={styles.title}>{title}</Text>
-    </View>
-  );
-
-
-export default Singup = () => {
-
-
-    return(
-       <View style={StyleSheet.container}>
-        <Text style={StyleSheet.titulo}>Selecione Uma Pagina  </Text>
-          <FlatList style={StyleSheet.lista} data={DATA}
-        renderItem={({item}) =>
-         <Link href={item.link}>
-            <Pressable>
-              <Text>{item.title}</Text> 
-            </Pressable>
-          </Link> }
-        keyExtractor={item => item.id}/>
-       </View>
+const Index = () => {
+    return (
+        <SafeAreaView>
+            <Text style={styles.title}>Bem vindo!</Text>
+            <Link href="./calculadora" style={styles.links}>
+                <Text style={styles.linkText}>Calculadora</Text>
+            </Link>
+            <Link href="./calculadora-atualizada" style={styles.links}>
+                <Text style={styles.linkText}>Calculadora-Atualizada</Text>
+            </Link>
+            <Link href="./contador" style={styles.links}>
+                <Text style={styles.linkText}>Contador</Text>
+            </Link>
+            <Link href="./flatlist" style={styles.links}>
+                <Text style={styles.linkText}>Flatlist</Text>
+            </Link>
+            <Link href="./loginComApi" style={styles.links}>
+                <Text style={styles.linkText}>Login com API</Text>
+            </Link>
+            <Link href="./picker" style={styles.links}>
+                <Text style={styles.linkText}>Picker</Text>
+            </Link>
+            <Link href="./splashscreen" style={styles.links}>
+                <Text style={styles.linkText}>Splashscreen</Text>
+            </Link>
+            <Link href="./aboutme" style={styles.links}>
+                <Text style={styles.linkText}>About me</Text>
+            </Link>
+            <Link href="./camera" style={styles.links}>
+                <Text style={styles.linkText}>camera</Text>
+            </Link>
+        </SafeAreaView>
     )
 }
+
+export default Index
+
+const styles = StyleSheet.create({
+    title: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        marginTop: 20,
+        marginBottom: 20,
+        color: '#333',
+    },
+    links: {
+        backgroundColor: '#007bff',
+        padding: 10,
+        marginVertical: 8,
+        borderRadius: 5,
+        alignItems: 'center',
+    },
+    linkText: {
+        color: '#fff',
+        fontSize: 18,
+        fontWeight: '500',
+        textAlign: 'center',
+    },
+})
