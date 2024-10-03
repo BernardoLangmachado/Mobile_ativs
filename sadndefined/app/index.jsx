@@ -71,11 +71,16 @@ const DATA = [
       title: 'ifome',
       link:'/carrinho'
     },
+    {
+      id: '10',
+      title: 'Camera',
+      link:'/camera'
+    },
   
 
   ];
 
-  const Item = ({title}: ItemProps) => (
+  const Item = ({title}) => (
     <View style={styles.item}>
       <Text style={styles.title}>{title}</Text>
     </View>
