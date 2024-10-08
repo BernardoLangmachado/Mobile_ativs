@@ -10,7 +10,7 @@ const Index = () => {
                 <Text style={styles.linkText}>Calculadora</Text>
             </Link>
             <Link href="./calculadora-atualizada" style={styles.links}>
-                <Text style={styles.linkText}>Calculadora-Atualizada</Text>
+                <Text style={styles.linkText}>Calculadora 2</Text>
             </Link>
             <Link href="./contador" style={styles.links}>
                 <Text style={styles.linkText}>Contador</Text>
@@ -27,7 +27,7 @@ const Index = () => {
             <Link href="./splashscreen" style={styles.links}>
                 <Text style={styles.linkText}>Splashscreen</Text>
             </Link>
-            <Link href="./aboutme" style={styles.links}>
+            <Link href="./Sobre mim" style={styles.links}>
                 <Text style={styles.linkText}>About me</Text>
             </Link>
             <Link href="./camera" style={styles.links}>
