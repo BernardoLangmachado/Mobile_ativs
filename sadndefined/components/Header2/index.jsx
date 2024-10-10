@@ -5,16 +5,7 @@ import { View, Text, TextInput, Pressable, StyleSheet } from "react-native"
 
 
 const styles = StyleSheet.create({
-    quadrado: {
-        width: 322,
-        height: 43,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#b51c00',
-        marginBottom: 50,
-        borderRadius: 16,
-        marginTop: -53,
-      },
+   
       texto1:{
         fontSize: 24,
         margin: 8,
@@ -23,20 +14,26 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center'
     },
+    quadrado: {
+        width: 320,
+        height: 73,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#b51c00',
+        marginBottom: 50,
+        borderRadius: 16,
+        marginTop: -53,
+      },
 
 });
 
 
 
 
-const Cabesalho = () => {
-
-
-
-
+const Headerzin = () => {
     return(
-        <View style={styles.container}
->            <View style={styles.quadrado}>
+        <View style={styles.container}>       
+             <View style={styles.quadrado}>
         <Text style={styles.texto1}>Meu app</Text>
             </View>
                 
@@ -44,4 +41,4 @@ const Cabesalho = () => {
     )
 }
 
-export default Cabesalho;
+export default Headerzin;

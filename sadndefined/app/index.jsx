@@ -27,11 +27,14 @@ const Index = () => {
             <Link href="./splashscreen" style={styles.links}>
                 <Text style={styles.linkText}>Splashscreen</Text>
             </Link>
-            <Link href="./Sobre mim" style={styles.links}>
+            <Link href="./sobre_min" style={styles.links}>
                 <Text style={styles.linkText}>About me</Text>
             </Link>
             <Link href="./camera" style={styles.links}>
                 <Text style={styles.linkText}>camera</Text>
+            </Link>
+            <Link href="./memorias" style={styles.links}>
+                <Text style={styles.linkText}>memorias</Text>
             </Link>
         </SafeAreaView>
     )

@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import { View, Text, TextInput, Pressable, StyleSheet, Image, Button, ScrollView, header } from "react-native"
-import Cabesalho from "../../components/Header/header";
+import Headerzin from "../../components/Header2";
 import { Link } from "expo-router";
 
 
@@ -61,7 +61,7 @@ export default Singup = () => {
             
 
             <View style={styles.quadrado}>
-             <Cabesalho />
+             <Headerzin />
 
                     <View style={styles.foto}>
                         <Image style={styles.foto2}  source={require('../../assets/images/Be.L.jpeg')}/> 
