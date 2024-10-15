@@ -1,7 +1,6 @@
 import React, {useState} from "react"
-import { View, Text, StyleSheet, Image, Button, ScrollView, Pressable} from "react-native"
-import Navmemorias from "./NA/navMemorias";
-import { Link } from "expo-router";
+import { View, Text, StyleSheet, Image, Button, ScrollView, Pressable, TextInput} from "react-native"
+import Navmemorias from "../memorias/NA/navMemorias";
 
 
 const styles = StyleSheet.create({
@@ -19,6 +18,16 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#f0f0f0',
+        borderRadius: 20,
+        justifyContent: 'center'
+      },
+
+      quadrado2: {
+        width: 220,
+        height: 260,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#999999',
         borderRadius: 20,
         justifyContent: 'center'
       },
@@ -45,6 +54,13 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
           
       },
+
+      input: {
+        height: 40,
+        margin: 12,
+        borderWidth: 1,
+        padding: 10,
+      },
      
 });
 
@@ -59,11 +75,14 @@ export default memorias = () => {
 
                 <View style={styles.quadrado}>
 
-                  <Pressable style={styles.botaoaddmemory}> 
-                    <Link href={'/addmemorias'} asChild>
-                      <Text style={styles.textobotaomemory}>Add Memória</Text>
-                    </Link>    
-                  </Pressable> 
+                    <View style={styles.quadrado2}>
+
+                        <TextInput  style={styles.input} value={Text} placeholder="local" keyboardType="numeric"></TextInput>
+
+                         <Pressable style={styles.botaoaddmemory}> 
+                                <TextInput></TextInput>    
+                        </Pressable> 
+                    </View>
 
                 </View>
         </View>
