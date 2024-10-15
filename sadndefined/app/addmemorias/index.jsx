@@ -13,8 +13,8 @@ const styles = StyleSheet.create({
       },
 
       quadrado: {
-        width: 320,
-        height: 460,
+        width: 380,
+        height: 660,
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#f0f0f0',
@@ -23,11 +23,11 @@ const styles = StyleSheet.create({
       },
 
       quadrado2: {
-        width: 220,
-        height: 260,
+        width: 320,
+        height: 250,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#999999',
+        backgroundColor: '#d1d1d1',
         borderRadius: 20,
         justifyContent: 'center'
       },
@@ -57,6 +57,15 @@ const styles = StyleSheet.create({
 
       input: {
         height: 40,
+        width: 223,
+        margin: 12,
+        borderWidth: 1,
+        padding: 10,
+      },
+
+      input2: {
+        height: 40,
+        width: 223,
         margin: 12,
         borderWidth: 1,
         padding: 10,
@@ -77,7 +86,11 @@ export default memorias = () => {
 
                     <View style={styles.quadrado2}>
 
-                        <TextInput  style={styles.input} value={Text} placeholder="local" keyboardType="numeric"></TextInput>
+                        <TextInput  style={styles.input} value={Text} placeholder="local" keyboardType="text"></TextInput>
+
+                        <TextInput  style={styles.input2} value={Text} placeholder="Data" keyboardType="text"></TextInput>
+
+                        <TextInput  style={styles.input2} value={Text} placeholder="Descrição" keyboardType="text"></TextInput>
 
                          <Pressable style={styles.botaoaddmemory}> 
                                 <TextInput></TextInput>    
