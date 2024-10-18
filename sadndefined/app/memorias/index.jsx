@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import { View, Text, StyleSheet, Image, Button, ScrollView, Pressable} from "react-native"
-import Navmemorias from "./NA/navMemorias";
+import Navmemorias from "./NA/navMemorias"
 import { Link } from "expo-router";
 
 
@@ -60,7 +60,7 @@ export default memorias = () => {
                 <View style={styles.quadrado}>
 
                   <Pressable style={styles.botaoaddmemory}> 
-                    <Link href={'/addmemorias'} asChild>
+                    <Link href={'/memorias/addmemorias'} asChild>
                       <Text style={styles.textobotaomemory}>Add Memória</Text>
                     </Link>    
                   </Pressable> 
